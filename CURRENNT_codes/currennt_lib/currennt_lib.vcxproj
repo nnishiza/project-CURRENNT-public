@@ -23,16 +23,62 @@
     <ClCompile Include="src\data_sets\DataSet.cpp" />
     <ClCompile Include="src\data_sets\DataSetFraction.cpp" />
     <CudaCompile Include="src\helpers\cublas.cu" />
+    <CudaCompile Include="src\helpers\dataProcess.cu" />
+    <CudaCompile Include="src\helpers\FFTMat.cu" />
     <CudaCompile Include="src\helpers\Matrix.cu" />
+    <CudaCompile Include="src\helpers\misFuncs.cu" />
     <CudaCompile Include="src\LayerFactory.cu" />
+    <CudaCompile Include="src\layers\BatchNorm.cu" />
+    <CudaCompile Include="src\layers\BatchNormNew.cu" />
     <CudaCompile Include="src\layers\BinaryClassificationLayer.cu" />
     <CudaCompile Include="src\layers\CePostOutputLayer.cu" />
+    <CudaCompile Include="src\layers\CNNLayer.cu" />
+    <CudaCompile Include="src\layers\DFTErrorPostoutputLayer.cu" />
+    <CudaCompile Include="src\layers\DistillingLayer.cu" />
+    <CudaCompile Include="src\layers\embedding.cu" />
+    <CudaCompile Include="src\layers\ExternalLoader.cu" />
+    <CudaCompile Include="src\layers\FeatExtract.cu" />
+    <CudaCompile Include="src\layers\FeatMatch.cu" />
+    <CudaCompile Include="src\layers\FeedBackHiddenLayer.cu" />
+    <CudaCompile Include="src\layers\FeedBackLayer.cu" />
+    <CudaCompile Include="src\layers\FilteringLayer.cu" />
+    <CudaCompile Include="src\layers\GatedActLayer.cu" />
+    <CudaCompile Include="src\layers\InputLayer.cu" />
+    <CudaCompile Include="src\layers\InterMetric.cu" />
+    <CudaCompile Include="src\layers\InterMetricSoftmax.cu" />
+    <CudaCompile Include="src\layers\InterMetricSSE.cu" />
+    <CudaCompile Include="src\layers\InterWeaveLayer.cu" />
+    <CudaCompile Include="src\layers\KLPostOutputLayer.cu" />
+    <CudaCompile Include="src\layers\Layer.cu" />
+    <CudaCompile Include="src\layers\LayerNorm.cu" />
     <CudaCompile Include="src\layers\LstmLayer.cu" />
+    <CudaCompile Include="src\layers\Maxpooling.cu" />
+    <CudaCompile Include="src\layers\MDNLayer.cu" />
+    <CudaCompile Include="src\layers\MDNUnit.cu" />
+    <CudaCompile Include="src\layers\MiddleOutputLayer.cu" />
+    <CudaCompile Include="src\layers\MutualInforPostOutputLayer.cu" />
+    <CudaCompile Include="src\layers\NormFlowLayer.cu" />
+    <CudaCompile Include="src\layers\OperationLayer.cu" />
+    <CudaCompile Include="src\layers\ParaLayer.cu" />
+    <CudaCompile Include="src\layers\PostOutputLayer.cu" />
+    <CudaCompile Include="src\layers\RandomShuffleLayer.cu" />
+    <CudaCompile Include="src\layers\RnnLayer.cu" />
+    <CudaCompile Include="src\layers\SelfAttention.cu" />
+    <CudaCompile Include="src\layers\SignalGenLayer.cu" />
+    <CudaCompile Include="src\layers\SincFilterLayer.cu" />
+    <CudaCompile Include="src\layers\SkipAddLayer.cu" />
+    <CudaCompile Include="src\layers\SkipCatLayer.cu" />
+    <CudaCompile Include="src\layers\SkipForFeatTransform.cu" />
+    <CudaCompile Include="src\layers\SkipLayer.cu" />
+    <CudaCompile Include="src\layers\SkipMergeDim.cu" />
+    <CudaCompile Include="src\layers\SkipParaLayer.cu" />
+    <CudaCompile Include="src\layers\SkipWeightAddLayer.cu" />
+    <CudaCompile Include="src\layers\SseCosPostOutputLayer.cu" />
     <CudaCompile Include="src\layers\SseMaskPostOutputLayer.cu" />
     <CudaCompile Include="src\layers\SsePostOutputLayer.cu" />
     <CudaCompile Include="src\layers\MulticlassClassificationLayer.cu" />
-    <CudaCompile Include="src\layers\PostOutputLayer.cpp" />
     <CudaCompile Include="src\layers\SoftmaxLayer.cu" />
+    <ClCompile Include="src\helpers\dotPlot.cpp" />
     <ClCompile Include="src\helpers\JsonClasses.cpp" />
     <CudaCompile Include="src\layers\RmsePostOutputLayer.cu">
       <FileType>CppCode</FileType>
@@ -40,7 +86,13 @@
     <ClCompile Include="src\NeuralNetwork.cpp">
       <FileType>Document</FileType>
     </ClCompile>
+    <CudaCompile Include="src\layers\SsePostOutputLayerForFeatTransform.cu" />
+    <CudaCompile Include="src\layers\SsePostOutputLayerMultiSource.cu" />
+    <CudaCompile Include="src\layers\StrucTransformLayer.cu" />
     <CudaCompile Include="src\layers\TrainableLayer.cu" />
+    <CudaCompile Include="src\layers\vaeMiddleLayer.cu" />
+    <CudaCompile Include="src\layers\vqLayer.cu" />
+    <CudaCompile Include="src\layers\wavNetCore.cu" />
     <CudaCompile Include="src\layers\WeightedSsePostOutputLayer.cu" />
     <CudaCompile Include="src\optimizers\Optimizer.cu">
       <FileType>CppCode</FileType>
@@ -51,24 +103,74 @@
     <ClInclude Include="src\Configuration.hpp" />
     <ClInclude Include="src\data_sets\DataSet.hpp" />
     <ClInclude Include="src\data_sets\DataSetFraction.hpp" />
+    <ClInclude Include="src\helpers\dataProcess.hpp" />
+    <ClInclude Include="src\helpers\dotPlot.hpp" />
+    <ClInclude Include="src\helpers\FFTMat.hpp" />
     <ClInclude Include="src\helpers\JsonClasses.hpp" />
     <ClInclude Include="src\helpers\JsonClassesForward.hpp" />
     <ClInclude Include="src\helpers\cublas.hpp" />
+    <ClInclude Include="src\helpers\misFuncs.hpp" />
     <ClInclude Include="src\helpers\printVector.hpp" />
     <ClInclude Include="src\LayerFactory.hpp" />
+    <ClInclude Include="src\layers\BatchNorm.hpp" />
+    <ClInclude Include="src\layers\BatchNormNew.hpp" />
     <ClInclude Include="src\layers\BinaryClassificationLayer.hpp" />
     <ClInclude Include="src\layers\CePostOutputLayer.hpp" />
+    <ClInclude Include="src\layers\CNNLayer.hpp" />
+    <ClInclude Include="src\layers\DFTErrorPostoutputLayer.hpp" />
+    <ClInclude Include="src\layers\DistillingLayer.hpp" />
+    <ClInclude Include="src\layers\embedding.hpp" />
+    <ClInclude Include="src\layers\ExternalLoader.hpp" />
+    <ClInclude Include="src\layers\FeatExtract.hpp" />
+    <ClInclude Include="src\layers\FeatMatch.hpp" />
+    <ClInclude Include="src\layers\FeedBackHiddenLayer.hpp" />
+    <ClInclude Include="src\layers\FeedBackLayer.hpp" />
     <ClInclude Include="src\layers\FeedForwardLayer.hpp" />
+    <ClInclude Include="src\layers\FilteringLayer.hpp" />
+    <ClInclude Include="src\layers\GatedActLayer.hpp" />
     <ClInclude Include="src\layers\InputLayer.hpp" />
+    <ClInclude Include="src\layers\InterMetric.hpp" />
+    <ClInclude Include="src\layers\InterMetricSoftmax.hpp" />
+    <ClInclude Include="src\layers\InterMetricSSE.hpp" />
+    <ClInclude Include="src\layers\InterWeaveLayer.hpp" />
+    <ClInclude Include="src\layers\KLPostOutputLayer.hpp" />
     <ClInclude Include="src\layers\Layer.hpp" />
+    <ClInclude Include="src\layers\LayerNorm.hpp" />
     <ClInclude Include="src\layers\LstmLayer.hpp" />
+    <ClInclude Include="src\layers\Maxpooling.hpp" />
+    <ClInclude Include="src\layers\MDNLayer.hpp" />
+    <ClInclude Include="src\layers\MDNUnit.hpp" />
+    <ClInclude Include="src\layers\MiddleOutputLayer.hpp" />
+    <ClInclude Include="src\layers\MutualInforPostOutputLayer.hpp" />
+    <ClInclude Include="src\layers\NormFlowLayer.hpp" />
+    <ClInclude Include="src\layers\OperationLayer.hpp" />
+    <ClInclude Include="src\layers\ParaLayer.hpp" />
+    <ClInclude Include="src\layers\RandomShuffleLayer.hpp" />
     <ClInclude Include="src\layers\RmsePostOutputLayer.hpp" />
+    <ClInclude Include="src\layers\RnnLayer.hpp" />
+    <ClInclude Include="src\layers\SelfAttention.hpp" />
+    <ClInclude Include="src\layers\SignalGenLayer.hpp" />
+    <ClInclude Include="src\layers\SincFilterLayer.hpp" />
+    <ClInclude Include="src\layers\SkipAddLayer.hpp" />
+    <ClInclude Include="src\layers\SkipCatLayer.hpp" />
+    <ClInclude Include="src\layers\SkipForFeatTransform.hpp" />
+    <ClInclude Include="src\layers\SkipLayer.hpp" />
+    <ClInclude Include="src\layers\SkipMergeDim.hpp" />
+    <ClInclude Include="src\layers\SkipParaLayer.hpp" />
+    <ClInclude Include="src\layers\SkipWeightAddLayer.hpp" />
+    <ClInclude Include="src\layers\SseCosPostOutputLayer.hpp" />
     <ClInclude Include="src\layers\SseMaskPostOutputLayer.hpp" />
     <ClInclude Include="src\layers\SsePostOutputLayer.hpp" />
     <ClInclude Include="src\layers\MulticlassClassificationLayer.hpp" />
     <ClInclude Include="src\layers\PostOutputLayer.hpp" />
     <ClInclude Include="src\layers\SoftmaxLayer.hpp" />
+    <ClInclude Include="src\layers\SsePostOutputLayerForFeatTransform.hpp" />
+    <ClInclude Include="src\layers\SsePostOutputLayerMultiSource.hpp" />
+    <ClInclude Include="src\layers\StrucTransformLayer.hpp" />
     <ClInclude Include="src\layers\TrainableLayer.hpp" />
+    <ClInclude Include="src\layers\vaeMiddleLayer.hpp" />
+    <ClInclude Include="src\layers\vqLayer.hpp" />
+    <ClInclude Include="src\layers\wavNetCore.hpp" />
     <ClInclude Include="src\layers\WeightedSsePostOutputLayer.hpp" />
     <ClInclude Include="src\netcdf\netcdf.h" />
     <ClInclude Include="src\NeuralNetwork.hpp" />
@@ -88,10 +190,6 @@
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="src\layers\FeedForwardLayer.cu" />
-    <CudaCompile Include="src\layers\InputLayer.cpp">
-      <Keep Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</Keep>
-    </CudaCompile>
-    <CudaCompile Include="src\layers\Layer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\activation_functions\Identity.cuh">
@@ -139,33 +237,38 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{1486C003-F639-452F-8D03-A05BB18397B0}</ProjectGuid>
     <RootNamespace>currennt_lib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
-    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 5.0.props" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 10.1.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -208,7 +311,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\boost_1_52_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\boost_1_71_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4661</DisableSpecificWarnings>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -226,14 +329,14 @@ del "$(ProjectDir)\tmpxft_*.o"</Command>
     </PostBuildEvent>
     <CudaCompile>
       <AdditionalOptions>-Xcompiler "/wd 4661" %(AdditionalOptions)</AdditionalOptions>
-      <CodeGeneration>compute_13,sm_13</CodeGeneration>
+      <CodeGeneration>compute_30,sm_30</CodeGeneration>
     </CudaCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\boost_1_52_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\boost_1_71_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4661</DisableSpecificWarnings>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -253,7 +356,7 @@ del "$(ProjectDir)\tmpxft_*.o"</Command>
     <CudaCompile>
       <TargetMachinePlatform>64</TargetMachinePlatform>
       <AdditionalOptions>-Xcompiler "/wd 4661" %(AdditionalOptions)</AdditionalOptions>
-      <CodeGeneration>compute_13,sm_13</CodeGeneration>
+      <CodeGeneration>compute_30,sm_30</CodeGeneration>
     </CudaCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -262,7 +365,7 @@ del "$(ProjectDir)\tmpxft_*.o"</Command>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>C:\boost_1_52_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\boost_1_71_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
@@ -284,7 +387,7 @@ del "$(ProjectDir)\tmpxft_*.o"</Command>
     </PostBuildEvent>
     <CudaCompile>
       <AdditionalOptions>-Xcompiler "/wd 4661" %(AdditionalOptions)</AdditionalOptions>
-      <CodeGeneration>compute_13,sm_13</CodeGeneration>
+      <CodeGeneration>compute_30,sm_30</CodeGeneration>
     </CudaCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -293,7 +396,7 @@ del "$(ProjectDir)\tmpxft_*.o"</Command>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>C:\boost_1_52_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\..\boost_1_71_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;NOMINMAX;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
@@ -316,11 +419,11 @@ del "$(ProjectDir)\tmpxft_*.o"</Command>
     <CudaCompile>
       <TargetMachinePlatform>64</TargetMachinePlatform>
       <AdditionalOptions>-Xcompiler "/wd 4661" %(AdditionalOptions)</AdditionalOptions>
-      <CodeGeneration>compute_13,sm_13</CodeGeneration>
+      <CodeGeneration>compute_30,sm_30</CodeGeneration>
     </CudaCompile>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 5.0.targets" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 10.1.targets" />
   </ImportGroup>
 </Project>

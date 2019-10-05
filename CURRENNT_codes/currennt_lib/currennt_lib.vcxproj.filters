@@ -12,6 +12,9 @@
     <ClCompile Include="src\helpers\JsonClasses.cpp">
       <Filter>helpers</Filter>
     </ClCompile>
+    <ClCompile Include="src\helpers\dotPlot.cpp">
+      <Filter>helpers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Configuration.hpp" />
@@ -153,6 +156,156 @@
     <ClInclude Include="src\layers\CePostOutputLayer.hpp">
       <Filter>layers</Filter>
     </ClInclude>
+    <ClInclude Include="src\helpers\misFuncs.hpp">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\dotPlot.hpp">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\NormFlowLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\MDNLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\ParaLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\RnnLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\FeedBackLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\BatchNorm.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\Maxpooling.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\CNNLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\MiddleOutputLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\OperationLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\FeatMatch.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\vaeMiddleLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\wavNetCore.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\ExternalLoader.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\vqLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\embedding.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\SignalGenLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\FilteringLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\FeatExtract.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\GatedActLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\FeedBackHiddenLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\SincFilterLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\SelfAttention.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\InterWeaveLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\LayerNorm.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\BatchNormNew.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\KLPostOutputLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\DFTErrorPostoutputLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\SsePostOutputLayerForFeatTransform.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\InterMetricSoftmax.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\InterMetricSSE.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\InterMetric.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\MutualInforPostOutputLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\SkipAddLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\SkipCatLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\DistillingLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\RandomShuffleLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\SkipParaLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\SsePostOutputLayerMultiSource.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\SkipLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\MDNUnit.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\SseCosPostOutputLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\SkipWeightAddLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\StrucTransformLayer.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\SkipForFeatTransform.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\FFTMat.hpp">
+      <Filter>helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\layers\SkipMergeDim.hpp">
+      <Filter>layers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers\dataProcess.hpp">
+      <Filter>helpers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="src\layers\FeedForwardLayer.cu">
@@ -162,15 +315,6 @@
       <Filter>optimizers</Filter>
     </CudaCompile>
     <CudaCompile Include="src\layers\LstmLayer.cu">
-      <Filter>layers</Filter>
-    </CudaCompile>
-    <CudaCompile Include="src\layers\Layer.cpp">
-      <Filter>layers</Filter>
-    </CudaCompile>
-    <CudaCompile Include="src\layers\InputLayer.cpp">
-      <Filter>layers</Filter>
-    </CudaCompile>
-    <CudaCompile Include="src\layers\PostOutputLayer.cpp">
       <Filter>layers</Filter>
     </CudaCompile>
     <CudaCompile Include="src\layers\BinaryClassificationLayer.cu">
@@ -209,6 +353,162 @@
     </CudaCompile>
     <CudaCompile Include="src\layers\TrainableLayer.cu">
       <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\PostOutputLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\InputLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\Layer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\helpers\misFuncs.cu">
+      <Filter>helpers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\NormFlowLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\MDNLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\ParaLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\RnnLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\FeedBackLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\BatchNorm.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\Maxpooling.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\CNNLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\MiddleOutputLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\OperationLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\FeatMatch.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\vaeMiddleLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\wavNetCore.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\ExternalLoader.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\vqLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\embedding.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\SignalGenLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\FilteringLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\FeatExtract.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\GatedActLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\FeedBackHiddenLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\SincFilterLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\SelfAttention.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\InterWeaveLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\LayerNorm.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\BatchNormNew.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\KLPostOutputLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\DFTErrorPostoutputLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\SsePostOutputLayerForFeatTransform.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\InterMetricSoftmax.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\InterMetricSSE.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\InterMetric.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\MutualInforPostOutputLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\SkipAddLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\SkipCatLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\DistillingLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\RandomShuffleLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\SkipParaLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\SsePostOutputLayerMultiSource.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\SkipLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\MDNUnit.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\SseCosPostOutputLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\SkipWeightAddLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\StrucTransformLayer.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\SkipForFeatTransform.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\helpers\FFTMat.cu">
+      <Filter>helpers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\layers\SkipMergeDim.cu">
+      <Filter>layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\helpers\dataProcess.cu">
+      <Filter>helpers</Filter>
     </CudaCompile>
   </ItemGroup>
   <ItemGroup>
