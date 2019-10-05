@@ -2022,8 +2022,8 @@ namespace {
 		a2          = a2 + (*gradientPtr)  * (*factorPtr);
 	    }
 	    
-	    real_t alpha = *(alphabeta+(filterIdx*2)*featureDim + featIndex); // tanh（alpha）
-	    real_t beta  = *(alphabeta+(filterIdx*2+1)*featureDim + featIndex);// sigmoid（beta）
+	    real_t alpha = *(alphabeta+(filterIdx*2)*featureDim + featIndex); // tanh(alpha)
+	    real_t beta  = *(alphabeta+(filterIdx*2+1)*featureDim + featIndex);// sigmoid(beta)
 	    
 	    if (filterIdx == 0 && aRealPole){
 		// the pole of the 1st order filter 
