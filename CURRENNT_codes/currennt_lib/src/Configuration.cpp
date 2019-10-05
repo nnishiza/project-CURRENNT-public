@@ -845,7 +845,7 @@ Configuration::Configuration(int argc, const char *argv[])
             std::cout << "\t\tSequences shuffled within and across mini-batches.\n" << std::endl;
 	}
         if (m_inputNoiseSigma != (real_t)0){
-	    if (m_exInputDim > 0 or m_exInputDims.size() > 0){
+	    if (m_exInputDim > 0 || m_exInputDims.size() > 0){
 		m_inputNoiseSigma = 0.0;
 		std::cout << "\t\tInput noise is disabled for external input" << std::endl;
 	    }else{
